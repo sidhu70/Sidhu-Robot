@@ -30,16 +30,16 @@ from YoneRobot import (
     sw,
     dispatcher,
 )
-from YoneRobot.modules.helper_funcs.chat_status import (
+from SidhuRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from YoneRobot.modules.helper_funcs.extraction import (
+from SidhuRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from YoneRobot.modules.helper_funcs.misc import send_to_list
+from SidhuRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -176,7 +176,7 @@ def gban(update: Update, context: CallbackContext):
         chat_origin = "<b>{}</b>\n".format(chat.id)
 
     log_message = (
-        f"#GBANNED\n"
+        f"#GBANNED😈\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>Banned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
